@@ -4,11 +4,9 @@ We use the FederatedScope framework, so first follow https://tianchi.aliyun.com/
 
 TODO: 
 
-git clone https://github.com/alibaba/FederatedScope.git
+git clone https://github.com/chen0405/cikm.git
 
-cd FederatedScope
-
-git checkout cikm22competition
+cd cikm
 
 conda create -n fs python=3.9
 conda activate fs
