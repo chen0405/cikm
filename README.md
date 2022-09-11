@@ -9,6 +9,7 @@ git clone https://github.com/chen0405/cikm.git
 cd cikm
 
 conda create -n fs python=3.9
+
 conda activate fs
 
 conda install -y pytorch=1.10.1 torchvision=0.11.2 torchaudio=0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
