@@ -21,6 +21,7 @@ mkdir data
 
 unzip -d ./data/ ${YOUR_OWN_PATH}/CIKM22Competition.zip
 
-python federatedscope/main.py --cfg federatedscope/gfl/baseline/isolated_gin_minibatch_on_cikmcup.yaml --client_cfg federatedscope/gfl/baseline/isolated_gin_minibatch_on_cikmcup_per_client.yaml
+python federatedscope/main.py --cfg federatedscope/gfl/baseline/cfg.yaml --client_cfg federatedscope/gfl/baseline/client_cfg.yaml
 
 # Brief introduction of the developed algorithm
+Our method is based on the "isolated" baseline, we set hidden to 1024, batch_size to 16, weight_decay to 0.00005, total_round_num to 30, and modified some client's lr to prevent gradient explosion, more detail can be seen in federatedscope/gfl/baseline/cfg.yaml and federatedscope/gfl/baseline/client_cfg.yaml.
